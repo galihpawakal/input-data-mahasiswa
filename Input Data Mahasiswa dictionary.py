@@ -23,6 +23,7 @@ kelas_mhs = []
 jur_mhs = []
 angkatan_mhs = []
 
+
 while True:
     print('Masukan data ke  -', i+1)
     nama_mhs.append(input('Masukkan nama Mahasiswa : '))
@@ -49,23 +50,12 @@ while True:
         nim_mhs.pop(i)
         continue
     mahasiswa_input(angkatan_mhs, 'ANGKATAN (TAHUN)', 4)
-    lagi = ""
-    while lagi != ('y' or 't'):
-        lagi = input('INPUT LAGI? [y/t] : ')
-        if lagi == 'y':
-            i += 1
-        elif lagi == 't':
-            break
-        else:
-            continue
-        if lagi == 't':
-            break
-        continue
+    lagi = input('INPUT LAGI? [y/t] : ')
+    if lagi == 'y':
+        i += 1
+    else:
+        break
 
-    print('                            Daftar Mahasiswa                               ')
-    print('===========================================================================')
-    print('     no        nama      nim        kelas          angkatan         jurusan')
-    print('===========================================================================')
 
 for data in range(len(nim_mhs)):
     print(data+1, "\t", nama_mhs[data], "\t", nim_mhs[data], "\t",
