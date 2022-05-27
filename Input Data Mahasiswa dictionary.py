@@ -27,7 +27,7 @@ angkatan_mhs = []
 while True:
     print('Masukan data ke  -', i+1)
     nama_mhs.append(input('Masukkan nama Mahasiswa : '))
-    mahasiswa_input(nim_mhs, 'NIM', 8)
+    mahasiswa_input(nim_mhs, 'NIM ( dengan jumlah kata / nomor  8 ) ', 8)
     mahasiswa_input(kelas_mhs, 'KELAS (A - E)', 1)
     mahasiswa_input(jur_mhs, 'JURUSAN (TI/EK/MN/IN)', 2)
     if jur_mhs[i] == 'TI':
